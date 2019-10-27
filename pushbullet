@@ -467,7 +467,9 @@ push)
 
 	title="$4"
 	body=""
-	if [ ! -t 0 ]; then
+	#REH: XXX: if [ ! -t 0 ]
+	if false
+	then
 		# we have something on stdin
 		body=$(cat)
 		# remove unprintable characters, or pushbullet API fails
